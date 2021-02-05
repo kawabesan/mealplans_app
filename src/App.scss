@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #aaa;
+  
+  h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    max-width: 600px;
+    height: auto;
+    margin: 30px auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+  
+    h1 {
+      background-color: #2f648f;
+      color: #fff;
+      font-size: 20pt;
+      padding: 10px 0;
+      border-radius: 10px 10px 0 0;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+  
+
+    .rambox {
+      border-bottom: 1px solid #2f648f;
+      height: 180px;
+      margin-bottom: 15px;
+
+      .ram-text {
+        margin: 15px;
+        height: 100px;
+
+        h2 {
+          font-size: 14pt;
+          font-weight: bold;
+          color: #2f648f;
+          margin-bottom: 15px;
+        }
+        .ramtex-box {
+          background-color: #eee;
+          padding: 15px;
+          height: 30px;
+          line-height: 30px;
+
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+
+
+      .rambtn {
+        padding: 10px 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: #b44239;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+
+    .menus {
+      padding-bottom: 30px;
+
+      .add-box {
+        
+        .add-label {
+          font-size: 14pt;
+          font-weight: bold;
+          margin-bottom: 10px;
+          display: block;
+          color: #2f648f;
+        }
+        .add-tex {
+          width: 300px;
+          padding: 5px 10px;
+          color: #666;
+          font-size: 12pt;
+          margin-right: 10px;
+        }
+  
+        .add-btn {
+          padding: 5px 20px;
+          background-color: #2f648f;
+          font-weight: bold;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+
+      .menu-list {
+        width: 400px;
+        margin: 15px auto;
+        border-collapse: collapse;
+  
+        .menu-item {
+
+          .plan-td {
+            border-bottom: 1px solid #2f648f;
+            padding: 10px 0 5px;
+            width: 340px;
+          }
+
+          .btn-td {
+            padding: 10px 0 5px;
+            width: 60px;
+          }
+
+          .del-btn {
+            border: none;
+            background-color: #b44239;
+            font-size: 10pt;
+            font-weight: bold;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 10px;
+          }
+        }
+    }
+    }
+    
+  }
+}
