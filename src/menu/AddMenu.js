@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import MenuItem from './menus/MenuItem';
 
 
@@ -28,6 +28,7 @@ class AddMenu extends Component {
 
 
   render() {
+    
     return(
       <div className="menus">
 
@@ -35,13 +36,17 @@ class AddMenu extends Component {
       <div className="add-box">
           <label for="addplan" className="add-label">メニューを追加</label>
         <form onSubmit={this.doSubmit}>
-          <input className="add-tex" id="addplan" type="text" placeholder="メニューを入力" onChange={this.doChange} value={this.state.plan_str}/>
+          <input className="add-tex" id="addplan" type="text" placeholder="メニューを入力" onChange={this.doChange} value={this.state.plan_str} required/>
           <input type="submit" value="追加" className="add-btn" />
         </form>
         </div>
         <table className="menu-list">
           <tbody>
             {
+              (this.props.plans === null || this.props.plans.length === 0) 
+              ?
+              <div>No Data</div>
+              :
               this.props.plans.map(val => (
                 <MenuItem key={val.id} plans={val} delPlan={this.props.delPlan}/>
                 )
