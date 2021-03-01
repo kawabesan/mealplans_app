@@ -56,7 +56,7 @@ class App extends Component {
 
     return(
       <div className="wrapper">
-        <h1>今日の晩ご飯！</h1>
+        <h1>Meal Plan</h1>
         <RandomMenu plans={this.state.plans} ramPlan={this.ramPlan}/>
         <AddMenu plans={this.state.plans} delPlan={this.delPlan} AddPlan={this.AddPlan}/>
       </div>

@@ -13,7 +13,7 @@ class RandomMenu extends Component {
     this.ramPlan = this.ramPlan.bind(this)
   }
 
-  ramPlan() {
+  ramPlan = () => {
     if(this.props.plans.length === 0) {
       return 
     }
@@ -27,7 +27,7 @@ class RandomMenu extends Component {
 
 
 
-  doAction() {
+  doAction = () => {
     this.setState({
       ramget: this.props.ramplan,
     })

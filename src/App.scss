@@ -1,3 +1,6 @@
+$main-color: #2f648f;
+
+
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +20,7 @@ body {
     border-radius: 10px;
   
     h1 {
-      background-color: #2f648f;
+      background-color: $main-color;
       color: #fff;
       font-size: 20pt;
       padding: 10px 0;
@@ -28,7 +31,7 @@ body {
   
 
     .rambox {
-      border-bottom: 1px solid #2f648f;
+      border-bottom: 1px solid $main-color;
       height: 180px;
       margin-bottom: 15px;
 
@@ -39,7 +42,7 @@ body {
         h2 {
           font-size: 14pt;
           font-weight: bold;
-          color: #2f648f;
+          color: $main-color;
           margin-bottom: 15px;
         }
         .ramtex-box {
@@ -76,7 +79,7 @@ body {
           font-weight: bold;
           margin-bottom: 10px;
           display: block;
-          color: #2f648f;
+          color: $main-color;
         }
         .add-tex {
           width: 300px;
@@ -88,7 +91,7 @@ body {
   
         .add-btn {
           padding: 5px 20px;
-          background-color: #2f648f;
+          background-color: $main-color;
           font-weight: bold;
           color: #fff;
           border: none;
@@ -104,7 +107,7 @@ body {
         .menu-item {
 
           .plan-td {
-            border-bottom: 1px solid #2f648f;
+            border-bottom: 1px solid $main-color;
             padding: 10px 0 5px;
             width: 340px;
           }
